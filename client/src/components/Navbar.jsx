@@ -216,7 +216,7 @@ const Navbar = () => {
         <div className="md:hidden border-t border-slate-700 px-4 py-2">
           <div className={`flex rounded-md overflow-hidden ${searchFocused ? 'ring-2 ring-orange-400' : ''}`}>
             <input
-              value={searchQuery}
+              
               onChange={(e) => setSearchQuery(e.target.value)}
               onFocus={() => setSearchFocused(true)}
               onBlur={() => setSearchFocused(false)}
@@ -259,7 +259,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Menu Items */}
+          
           <div className="flex-1 overflow-y-auto">
             <div className="py-4">
               <div className="px-6 py-2 text-xs font-semibold text-slate-500 uppercase">Navigation</div>
