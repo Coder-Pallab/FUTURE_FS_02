@@ -48,13 +48,13 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="mt-2 bg-primary hover:bg-primary-dull text-white font-medium py-3 rounded-xl transition shadow-md"
+          className="mt-2 bg-primary hover:bg-blue-500 text-white font-medium py-3 rounded-xl transition shadow-md"
         >
           Send Message
         </button>
 
         <a
-          href="https://pallab-portfolio-updated.vercel.app"
+          href="https://fullstackpallab.vercel.ap"
           target="_blank"
           rel="noopener noreferrer"
           className="text-center mt-2 text-primary hover:underline font-medium"

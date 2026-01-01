@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const banners = [
   {
-    desktop: 'https://images.unsplash.com/photo-1542838132-92c53300491e',
-    mobile: 'https://images.unsplash.com/photo-1542838132-92c53300491e',
+    desktop: 'https://images.unsplash.com/photo-1633464129147-777bdcc97c1d',
+    mobile: 'https://images.unsplash.com/photo-1633464129147-777bdcc97c1d',
   },
   {
-    desktop: 'https://images.unsplash.com/photo-1586201375761-83865001e31c',
-    mobile: 'https://images.unsplash.com/photo-1586201375761-83865001e31c',
+    desktop: 'https://images.unsplash.com/photo-1426024084828-5da21e13f5dc',
+    mobile: 'https://images.unsplash.com/photo-1426024084828-5da21e13f5dc',
   },
   {
     desktop: 'https://images.unsplash.com/photo-1606813907291-d86efa9b94db',
@@ -53,13 +53,13 @@ const MainBanner = () => {
       {/* Text Content */}
       <div className="absolute inset-0 flex flex-col items-center md:items-start justify-end md:justify-center pb-24 md:pb-0 px-4 md:pl-18 lg:pl-24 bg-black/30">
         <h1 className="text-3xl md:text-5xl font-bold text-white text-center md:text-left max-w-xl">
-          Fresh Groceries at Your Doorstep
+          Everything at Your Doorstep
         </h1>
 
         <div className="flex gap-4 mt-6">
           <Link
             to="/products"
-            className="px-8 py-3 bg-green-600 hover:bg-green-700 transition text-white rounded"
+            className="px-8 py-3 bg-blue-950 hover:bg-blue-500 transition text-white rounded"
           >
             Shop Now
           </Link>

@@ -1,33 +1,72 @@
-import { assets, footerLinks } from "../assets/assets";
-
 const Footer = () => {
+  return (
+    <footer className="mt-24 bg-gray-100 px-6 md:px-16 lg:px-24 xl:px-32">
+      
+      <div className="flex flex-col md:flex-row gap-10 py-12 border-b border-gray-300">
 
-    return (
-        <div className="px-6 md:px-16 lg:px-24 xl:px-32 mt-24 bg-primary/10">
-            <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500">
-                <div>
-                    <img className="w-34 md:w-32" src={assets.logo} alt="Footer-Logo" />
-                    <p className="max-w-[410px] mt-6">Aaahar Food Delivery - bringing fresh, delicious meals straight to your doorstep. Whether it's your favorite comfort food or something new to try, we ensure every bite is made with care and delivered with love. Serving happiness, one order at a time.</p>
-                </div>
-                <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5">
-                    {footerLinks.map((section, index) => (
-                        <div key={index}>
-                            <h3 className="font-semibold text-base text-gray-900 md:mb-5 mb-2">{section.title}</h3>
-                            <ul className="text-sm space-y-1">
-                                {section.links.map((link, i) => (
-                                    <li key={i}>
-                                        <a href={link.url} className="hover:underline transition">{link.text}</a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <p className="py-4 text-center text-sm md:text-base text-gray-500/80">
-                Copyright {new Date().getFullYear()} © <a href="https://pallabduarah-portfolio.netlify.app">Pallab Duarah | </a> All Right Reserved.
-            </p>
+        {/* Brand Info */}
+        <div className="md:w-1/3">
+          <h1 className="text-4xl italic font-bold text-primary">OneBuy</h1>
+          <p className="mt-5 text-gray-600 max-w-sm">
+            OneBuy is your one-stop online shopping destination. 
+            Shop electronics, fashion, groceries, home essentials and more 
+            with fast delivery, secure payments, and easy returns.
+          </p>
         </div>
-    );
-};
-export default Footer;
+
+        {/* Footer Links */}
+        <div className="flex flex-wrap justify-between w-full md:w-2/3 gap-8 text-gray-600">
+
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-4">Shop</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:underline">Mobiles</a></li>
+              <li><a href="#" className="hover:underline">Fashion</a></li>
+              <li><a href="#" className="hover:underline">Electronics</a></li>
+              <li><a href="#" className="hover:underline">Home & Furniture</a></li>
+              <li><a href="#" className="hover:underline">Grocery</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-4">Customer Care</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:underline">My Account</a></li>
+              <li><a href="#" className="hover:underline">Orders</a></li>
+              <li><a href="#" className="hover:underline">Returns & Refunds</a></li>
+              <li><a href="#" className="hover:underline">FAQs</a></li>
+              <li><a href="#" className="hover:underline">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-4">About OneBuy</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="hover:underline">About Us</a></li>
+              <li><a href="#" className="hover:underline">Careers</a></li>
+              <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Bottom */}
+      <div className="py-5 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} OneBuy. All Rights Reserved.  
+        <br />
+        Built by{" "}
+        <a
+          href="https://fullstackpallab.vercel.app"
+          className="underline hover:text-primary"
+        >
+          Pallab Duarah
+        </a>
+      </div>
+
+    </footer>
+  )
+}
+
+export default Footer

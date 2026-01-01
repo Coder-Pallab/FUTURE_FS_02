@@ -167,7 +167,7 @@ const Cart = () => {
                         <span>Price</span><span>{currency}{getCartAmount()}</span>
                     </p>
                     <p className="flex justify-between">
-                        <span>Shipping Fee</span><span className="text-green-600">Free</span>
+                        <span>Shipping Fee</span><span className="text-blue-800">Free</span>
                     </p>
                     <p className="flex justify-between">
                         <span>Tax (2%)</span><span>{currency}{Math.floor(getCartAmount() * 2 / 100)}</span>
@@ -177,7 +177,7 @@ const Cart = () => {
                     </p>
                 </div>
 
-                <button onClick={placeOrder} className="w-full py-3 mt-6 cursor-pointer bg-primary text-white font-medium hover:bg-primary-dull transition">
+                <button onClick={placeOrder} className="w-full py-3 mt-6 cursor-pointer bg-primary text-white font-medium hover:bg-blue-500 transition">
                     {paymentOption === "COD" ? "Place Order" : "Proceed to Checkout"}
                 </button>
             </div>

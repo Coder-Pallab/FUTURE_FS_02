@@ -50,9 +50,9 @@ const Navbar = () => {
               {/* Logo */}
               <NavLink to="/" className="flex-shrink-0">
                 <img 
-                  src={assets.logo} 
+                  src="./OneBuy logo.png" 
                   alt="Logo" 
-                  className="h-8 sm:h-10 w-auto brightness-0 invert"
+                  className="h-8 sm:h-10 w-40"
                 />
               </NavLink>
 
