@@ -6,7 +6,8 @@ const Footer = () => {
 
         {/* Brand Info */}
         <div className="md:w-1/3">
-          <h1 className="text-4xl italic font-bold text-primary">OneBuy</h1>
+        <img src="./OneBuy logo.png" alt="" className="w-45 h-10 invert" />
+          {/* <h1 className="text-4xl italic font-bold text-primary">OneBuy</h1> */}
           <p className="mt-5 text-gray-600 max-w-sm">
             OneBuy is your one-stop online shopping destination. 
             Shop electronics, fashion, groceries, home essentials and more 
